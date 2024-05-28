@@ -1,0 +1,104 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+	background-image: url("ptrbackground.jpg");
+	width: 80%;
+	min-width: 600px;
+	margin: auto;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	background-repeat: repeat-x;
+}
+
+#wrapper {
+	background-color: white;
+}
+
+nav ul {
+	font-size: 1.2em;
+	background-color: #5eace0;
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	width: 150px;
+	height: 645px;
+	position: absolute;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: darkblue;
+	padding: 10px;
+
+}
+
+nav a:visited {
+	color: #344873;
+
+}
+
+nav a:hover {
+	color: #FFFFFF;
+
+}
+
+h1 {
+	background-image: url("sunset.jpg");
+	color: white;
+	padding: 15px;
+	margin-bottom: 0;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+h2 {
+	color: #3399CC;
+	text-align: left;
+	margin: 20px 20px 20px -210px;
+
+} 
+
+ h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 95%;
+	margin: 50px 0px 0px -230px;
+	padding: 30px;
+}
+
+img {
+	margin: 55px 1000px 50px -220px;
+	float: left;
+	position: absolute;
+} 
+
+#content {
+	margin: 5px 5px 20px 400px;
+
+}
+
+span {
+	font-weight: bold;
+	color: rgb(28, 72, 167);
+}
+
+#content ul {
+	list-style-image: url("marker.gif");
+	margin: -20px 5px 30px 100px;
+
+}
+
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	text-align: left;
+	margin-left: 150px;
+	padding: 40px;
+}
+
