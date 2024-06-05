@@ -1,0 +1,58 @@
+<!--
+Full Name : Rish Dhir
+Assignment 3: Dynamic Multiplication Table
+Copyright (c) 2024 by Rish Dhir. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Assingment Description: In assignment we were required to create a dynamic multiplicaiton table
+using html css and javascript. The program also checks for invalid inputs and tells the user to correct them.
+Once the correct values are entered then the table will print
+
+Links used for help:
+Class Notes
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+https://www.w3schools.com/tags/tag_span.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+https://www.w3schools.com/jsref/prop_node_innertext.asp
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
+https://www.w3.org/MarkUp/html3/tablecells.html#:~:text=The%20TH%20and%20TD%20elements,used%20for%20table%20data%20cells.
+
+Github IO: https://github.com/Rish-24/GUI-1.git
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3 Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="../Rish_Dhir_HW3/css/style.css">
+    </style>
+</head>
+<body>
+    <h1>Dynamic Multiplication Table</h1>
+    <div class="form">
+        <form id="multiplicationForm">
+            Minimum Row Value (Range -50 to 50)<br>
+            <input type="text" id="MinRow" name="MinRow"><br>
+            <span class="error" id="MinRowError"></span><br>
+
+            Maximum Row Value (Range -50 to 50)<br>
+            <input type="text" id="MaxRow" name="MaxRow"><br>
+            <span class="error" id="MaxRowError"></span><br>
+
+            Minimum Column Value (Range -50 to 50)<br>
+            <input type="text" id="MinCol" name="MinCol"><br>
+            <span class="error" id="MinColError"></span><br>
+
+            Maximum Column Value (Range -50 to 50)<br>
+            <input type="text" id="MaxCol" name="MaxCol"><br>
+            <span class="error" id="MaxColError"></span><br>
+            <button type="button" onclick="StartTable()">Generate Table</button>
+        </form>
+    </div>
+    <div class="scrollable-container">
+        <div id="Table"></div>
+    </div>
+    <script src="./js/table.js"></script>
+</body>
+</html>

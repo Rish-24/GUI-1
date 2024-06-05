@@ -1,0 +1,44 @@
+h1 {
+    font-size: larger;
+    font-style: italic;
+    font-size: larger;
+}
+body {
+    background-image: url(../images/387606063_be63334fd8_h.jpg);
+}
+form {
+    text-align: center;
+    font-style: italic;
+    border: dotted 2px;
+    font-size: larger;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+
+th, td {
+    width: 50px;
+    padding: 2px;
+    text-align: left;
+}
+
+table, th, td {
+    font-size: 14px;
+    border: 1px solid gray;
+    margin: auto;
+    background-color: white;
+}
+
+
+th, td:nth-child(1) {
+    color: #6a4ea2;
+    background-color: lightgoldenrodyellow;
+}
+
+button {
+    font-weight: bold;
+
+}
