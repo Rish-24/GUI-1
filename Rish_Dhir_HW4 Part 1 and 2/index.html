@@ -1,0 +1,74 @@
+<!--
+Full Name : Rish Dhir
+Assignment 4: JQuery Validation and Slider UI Validation
+Copyright (c) 2024 by Rish Dhir. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Assingment Description: In assignment we were required to build upon our dynamic multiplacation table by adding in Jquery Valitation and Certain Widgets. In this assignment 
+I added a scrolling slider which adjusts the values of the values that are being entered into the webpage and 
+
+Links used for help:
+Class Notes
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+https://www.w3schools.com/tags/tag_span.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+https://www.w3schools.com/jsref/prop_node_innertext.asp
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
+https://www.w3.org/MarkUp/html3/tablecells.html#:~:text=The%20TH%20and%20TD%20elements,used%20for%20table%20data%20cells.
+https://sitepoint.com/ways-jquery-alert/
+https://jqueryui.com/slider/
+https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
+https://api.jquery.com/attr/
+Github IO: https://github.com/Rish-24/GUI-1.git
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3 Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="../Rish_Dhir_HW3/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <h1>Dynamic Multiplication Table</h1>
+    <div class="form">
+        <form id="multiplicationForm">
+            <label for="MinRow">Minimum Row Value (Range -50 to 50)</label><br>
+            <input type="text" id="MinRow" name="MinRow"><br>
+            <div id="MinRowSlider"></div><br>
+            <span class="error" id="MinRowError"></span><br>
+
+            <label for="MaxRow">Maximum Row Value (Range -50 to 50)</label><br>
+            <input type="text" id="MaxRow" name="MaxRow"><br>
+            <div id="MaxRowSlider"></div><br>
+            <span class="error" id="MaxRowError"></span><br>
+
+            <label for="MinCol">Minimum Column Value (Range -50 to 50)</label><br>
+            <input type="text" id="MinCol" name="MinCol"><br>
+            <div id="MinColSlider"></div><br>
+            <span class="error" id="MinColError"></span><br>
+
+            <label for="MaxCol">Maximum Column Value (Range -50 to 50)</label><br>
+            <input type="text" id="MaxCol" name="MaxCol"><br>
+            <div id="MaxColSlider"></div><br>
+            <span class="error" id="MaxColError"></span><br>
+            <button type="button" onclick="StartTable()">Generate Table</button>
+        </form>
+    </div>
+    <div class="scrollable-container">
+        <div id="Table"></div>
+    </div>
+    <div id="Tabs">
+        <ul></ul>
+    </div>
+    <div id="DeleteTab"></div>
+    
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/table.js"></script>
+    <script src="./js/InputValidation.js"></script>
+    <script src="./js/Slider.js"></script>
+</body>
+</html>

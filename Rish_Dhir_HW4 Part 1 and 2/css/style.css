@@ -1,0 +1,73 @@
+/* // Full Name : Rish Dhir
+// Assignment 4: JQuery Validation and Slider UI Validation
+// Copyright (c) 2024 by Rish Dhir. All rights reserved. May be freely copied or
+// excerpted for educational purposes with credit to the author.
+// Assingment Description: In assignment we were required to build upon our dynamic multiplacation table by adding in Jquery Valitation and Certain Widgets. In this assignment 
+// I added a scrolling slider which adjusts the values of the values that are being entered into the webpage and 
+
+// Links used for help:
+// Class Notes
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+// https://www.w3schools.com/tags/tag_span.asp
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+// https://www.w3schools.com/jsref/prop_node_innertext.asp
+// https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
+// https://www.w3.org/MarkUp/html3/tablecells.html#:~:text=The%20TH%20and%20TD%20elements,used%20for%20table%20data%20cells.
+// https://sitepoint.com/ways-jquery-alert/
+// https://jqueryui.com/slider/
+// https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
+// https://api.jquery.com/attr/
+// Github IO: https://github.com/Rish-24/GUI-1.git */
+
+
+h1 {
+    font-size: larger;
+    font-style: italic;
+    font-size: larger;
+}
+body {
+    background-image: url(../images/387606063_be63334fd8_h.jpg);
+}
+form {
+    text-align: center;
+    font-style: italic;
+    border: dotted 2px;
+    font-size: larger;
+}
+input[type="text"] {
+    padding: 0px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    border-radius: 1px;
+    font-size: larger;
+    font-style: italic;
+}
+.error {
+    color: red;
+    font-style: italic;
+}
+
+
+th, td {
+    width: 50px;
+    padding: 2px;
+    text-align: left;
+}
+
+table, th, td {
+    font-size: 14px;
+    border: 1px solid gray;
+    margin: auto;
+    background-color: white;
+}
+
+
+th, td:nth-child(1) {
+    color: #6a4ea2;
+    background-color: lightgoldenrodyellow;
+}
+
+button {
+    font-weight: bold;
+
+}
