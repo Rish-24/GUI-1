@@ -1,0 +1,50 @@
+/* <!-- Full Name : Rish Dhir
+Assignment 5: Scrabble Board
+Copyright (c) 2024 by Rish Dhir. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Assingment Description: In assignment we were required to build a srabble board game. I made the basic
+version of the game by just implementing one strip of the game rather then the board. The board correctly
+updates the score and the highest scores and the remaining tiles are tracked
+Github IO: https://github.com/Rish-24/GUI-1.git
+  */
+h2 {
+    font-style: italic;
+}
+
+h4, h5 {
+    font-style: italic;
+}
+
+body {
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.TrackingData {
+    margin: 10px;
+}
+
+.draggable img {
+    width: 100%;
+    height: 100%;
+}
+
+.draggable {
+    width: 60px; 
+    height: 60px; 
+    font-size: 16px; 
+}
+
+.tile-rack {
+    display: flex;
+    justify-content: center; 
+    margin: -120px auto;
+    padding: 10px;
+}
+
+button {
+    padding: 5px;
+    margin: 10px;
+}

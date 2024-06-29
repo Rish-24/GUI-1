@@ -1,0 +1,75 @@
+<!-- Full Name : Rish Dhir
+Assignment 5: Scrabble Board
+Copyright (c) 2024 by Rish Dhir. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Assingment Description: In assignment we were required to build a srabble board game. I made the basic
+version of the game by just implementing one strip of the game rather then the board. The board correctly
+updates the score and the highest scores and the remaining tiles are tracked 
+Github IO: https://github.com/Rish-24/GUI-1.git
+
+Links used for help:
+Class Notes
+Jquery Documentation
+https://www.w3schools.com/tags/tag_span.asp
+https://api.jquery.com/attr/
+https://api.jqueryui.com/1.10/zIndex/
+https://www.w3schools.com/jquery/html_append.asp
+https://www.geeksforgeeks.org/jquery-ui-draggable-revert-option/
+https://api.jqueryui.com/droppable/ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>HW5 Scrabble Board</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="./js/scrabble.js"></script>
+</head>
+<body>
+    <header>
+        <h2>HW5: Scrabble</h2>
+        <h4>Place the following letters into the rack to form a word</h4>
+        <h5>Hints: Only Create One Word Without Gaps, Word Must Have Minimum of 2 letters, The Word Has to be part of the dictionary.</h5>
+    </header>
+    <div class="TrackingData">
+        <span>
+            <span>Word:</span>
+            <span id="Word"></span>
+        </span>
+        <span>
+            <span>Score:</span>
+            <span id="Score">0</span>
+        </span>
+        <span>
+            <span>Highest Score:</span>
+            <span id="HighestScore">0</span>
+        </span>
+        <span>
+            <span>Remaining Tiles:</span>
+            <span id="RemainingTiles">93</span>
+        </span>
+    </div>
+    <div class="MainBoard" id="Board">
+        <img src="./images/blank_space.png" alt="Game Board Background" class="droppable target" data-col="1" data-row="1">
+        <img src="./images/double_word.png" alt="Double Word" class="droppable target" data-col="2" data-row="1">
+        <img src="./images/blank_space.png" alt="Game Board Background" class="droppable target" data-col="3" data-row="1">
+        <img src="./images/blank_space.png" alt="Game Board Background" class="droppable target" data-col="4" data-row="1">
+        <img src="./images/blank_space.png" alt="Double Word" class="droppable target" data-col="5" data-row="1">
+        <img src="./images/double_word.png" alt="Game Board Background" class="droppable target" data-col="6" data-row="1">
+        <img src="./images/blank_space.png" alt="Double Word" class="droppable target" data-col="7" data-row="1">
+    </div>
+    <div style="text-align: center;">
+        <button id="nextWordButton" onclick="nextWord()">Next Word</button>
+        <button id="resetButton" onclick="reset()">Start Over</button>
+        <div class="TileRackHolder">
+            <img src="./images/scrabble-tile-holder-406774_640.png" alt="Tile Rack Holder">
+            <div id="tileRack" class="tile-rack">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
